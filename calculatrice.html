@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body onload="calculer();">
+<h1>Super Calculator</h1>
+
+  <form>
+    <label for="premier-nombre">Saisir le premier nombre</label><br>
+    <input type="number" id="premier-nombre"><br>
+    <br>
+    <label for="deuxieme-nombre">saisir le deuxième nombre</label><br>
+    <input type="number" id="deuxieme-nombre"><br>
+    <br>
+   
+      <label for="operateur">Opérateur:
+        <select name="operateur" id="operateur">
+          <option value="addition">+</option>
+          <option value="soustraction">-</option>
+          <option value="multiplication">*</option>
+          <option value="division">/</option>
+        </select>
+      </label>
+    <br>
+    <br>
+    <button type="button" id="btn">Calculer</button><br>
+    <label for="resultat">Le résultat est :</label><br>
+    <input type="number" id="resultat"><br>
+  </form>
+  <script src="script-calculatrice.js"></script>
+</body>
+
+</html>
