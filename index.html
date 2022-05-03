@@ -11,26 +11,31 @@
 <h1>Super Calculator</h1>
 
   <form>
-    <label for="premier-nombre">Saisir le premier nombre</label><br>
-    <input type="number" id="premier-nombre"><br>
-    <br>
-    <label for="deuxieme-nombre">saisir le deuxième nombre</label><br>
-    <input type="number" id="deuxieme-nombre"><br>
-    <br>
-   
-      <label for="operateur">Opérateur:
-        <select name="operateur" id="operateur">
-          <option value="addition">+</option>
-          <option value="soustraction">-</option>
-          <option value="multiplication">*</option>
-          <option value="division">/</option>
-        </select>
-      </label>
-    <br>
-    <br>
-    <button type="button" id="btn">Calculer</button><br>
-    <label for="resultat">Le résultat est :</label><br>
-    <input type="number" id="resultat"><br>
+    <div class="number">
+      <div class="number1">
+        <label for="premier-nombre">Saisir le premier nombre</label><br>
+        <input type="number" id="premier-nombre">
+      </div>
+      <div class="number2">
+        <label for="deuxieme-nombre">Saisir le deuxième nombre</label><br>
+        <input type="number" id="deuxieme-nombre">
+      </div>
+      <div class="operator">
+        <label for="operateur">Opérateur:
+          <select name="operateur" id="operateur">
+            <option value="addition">+</option>
+            <option value="soustraction">-</option>
+            <option value="multiplication">*</option>
+            <option value="division">/</option>
+          </select>
+        </label>
+      </div>
+      <button type="button" id="btn">Calculer</button>
+      <div class="result">
+        <label for="resultat">Le résultat est :</label>
+        <input type="text" id="resultat">
+      </div>
+    </div>
   </form>
   <script src="script-calculatrice.js"></script>
 </body>

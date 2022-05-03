@@ -1,9 +1,13 @@
+body {
+  background-color: lightblue;
+}
+
 h1 {
   text-align: center;
 }
 
 form {
-  width: 200px;
+  width: 400px;
   height: 300px;
   border-radius: 25px;
   display: block;
@@ -12,14 +16,38 @@ form {
   border: solid 2px black;
   padding: 5px;
   box-shadow: 3px 3px 5px black;
+  background-color: aliceblue;
 }
 
-#btn,
-#operator {
+#btn {
   display: block;
   margin: auto;
+  border-radius: 25px;
+  height: 30px;
+  width: auto;
+  background-color: lightseagreen;
+  color: white;
+  margin-top: 20px;
 }
 
 #operatorBis {
   text-align: center;
+}
+
+.number,
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.number1,
+.result {
+  padding-top: 20px;
+}
+
+.number1,
+.number2 {
+  padding-bottom: 20px;
 }
